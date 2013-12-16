@@ -1,0 +1,138 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true" />
+        <title>home</title>
+      
+    </h:head>
+    <h:body>
+    
+      <h:form>
+      <ui:composition template="/opendata/util/template.xhtml">
+        <ui:define name="content">
+        <h:form>
+        <h:panelGroup rendered="#{managerCategorias.showMap}">
+           <div class="panel panel-primary">
+             <div class="panel-heading">
+             <h:commandLink action="#{managerCategorias.chanceMap}">
+              <p class="text-danger">
+              
+              <span class="glyphicon glyphicon-home"></span> Home </p>
+              <f:ajax render="@form">
+              
+              </f:ajax>
+             
+             </h:commandLink>
+            
+          
+            </div>
+            <div class="panel-body">
+               <p:gmap center="-8.1089244,-34.8886215
+                  " zoom="13" type="ROADMAP" model="#{managerCategorias.simpleModel}" style="width:100%;height:300px;align:center">  
+                   <p:ajax event="overlaySelect" listener="#{managerCategorias.onMakerSelected}" />  
+               </p:gmap>
+            </div>
+         </div>
+         
+      </h:panelGroup> 
+      <h:panelGroup rendered="#{managerCategorias.showMap eq false}">
+       <div class="panel panel-primary">
+           <div class="panel-heading">
+           <h:commandLink action="#{managerCategorias.chanceMap}">
+           <p class="text-danger">
+              <span class="glyphicon glyphicon-map-marker"></span> Ver Mapa </p>
+              <f:ajax render="@form">
+              
+              </f:ajax>
+              </h:commandLink>
+           </div>
+           <div class="panel-body">
+             <h:graphicImage  url="/icon/fundoInicial.png"  height="300px" width="100%"  />
+           </div>
+       </div>
+     
+      
+      </h:panelGroup>   
+      </h:form>
+      <br/>
+      <h:form>
+      <div class="row">
+           <div class="col-md-2">
+                <h:panelGroup>
+                <h3> <span class="label label-primary">Informações <br></br></span></h3>
+          
+                 <h:form>
+               
+                    <h:commandLink value="Feiras Livres" action="#{managerCategorias.markerOnMap('Feiras')}" /><br/>
+                    <h:commandLink value="Hoteis" action="#{managerCategorias.markerOnMap('Hoteis')}" /><br/>
+                    <h:commandLink value="Mercados Públicos" action="#{managerCategorias.markerOnMap('Mercados')}" /><br/>
+              
+                    <span class="badge pull-right"><span class="glyphicon glyphicon-tower"></span></span>
+                    <h:commandLink value="Museus" action="#{managerCategorias.markerOnMap('Museus')}" > </h:commandLink><br/>
+              
+                    <h:commandLink value="Pontes do Recife" action="#{managerCategorias.markerOnMap(Pontes)}" /><br/>
+                    <h:commandLink value="Shopping" action="#{managerCategorias.markerOnMap('Shopping')}" /><br/>
+                    <h:commandLink value="Teatro" action="#{managerCategorias.markerOnMap('Teatro')}" /><br/>
+                    </h:form> 
+                </h:panelGroup> 
+         
+           </div>
+       
+      
+     
+      
+      <div class="col-md-6">
+      <center><h3> <span class="label label-primary"> O BIGU </span></h3></center> 
+          
+         
+           <div class="media">
+  <a class="pull-left" href="#">
+    <h:graphicImage width="200px" height="200px" class="img-circle" url="/icon/recife.jpg"/> 
+  </a>
+  <div class="media-body">
+    Aqui você pode obter informações sobre diversos pontos turisticos do Recife.
+          Tudo de uma maneira que visa sempre facilitar sua estadia na vezena brasileira.
+          Contamos com informações de localização, funcionamento e acesso aos Museus, Teatros, Shopping, 
+          Mercados públicos, Feiras livres, Pontes Hoteis e até mesmo Agremiações Carnavalescas.
+       </div>
+   </div>         
+       
+           Por meio dos<a href="http://dados.recife.pe.gov.br/" > dados aberto </a>  do governo municipal do Recife, o BIGU propoe uma
+           uma solução para a locomoção dos turistas na capital pernambucana informando os principais pontos da capital presentes nos dados abertos. 
+         </div>
+      
+        
+         <div class="col-md-4">
+         
+             <center> <h3><span class="label label-primary">Evocação do Recife</span></h3></center> 
+         
+        
+         
+
+Recife<br/>
+Não a Veneza americana<br/>
+Não a Mauritsstad dos armadores das Índias Ocidentais<br/>
+Não o Recife dos Mascates<br/>
+Nem mesmo o Recife que aprendi a amar depois<br/>
+- Recife das revoluções libertárias<br/>
+Mas o Recife sem história nem literatura<br/>
+Recife sem mais nada<br/>
+Recife da minha infância.<br/>
+           <b> - Manoel Bandeira</b>
+         </div>
+         </div>
+      
+      </h:form>
+      </ui:define>
+      </ui:composition>
+    
+    
+    
+        
+        
+       </h:form>   
+    </h:body>
+</html>

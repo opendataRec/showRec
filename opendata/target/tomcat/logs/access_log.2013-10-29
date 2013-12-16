@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [29/Oct/2013:20:16:41 -0200] "GET /opendata/faces/opendata/util/loadcsv.xhtml HTTP/1.1" 200 790 http-bio-8080-exec-1 382
+0:0:0:0:0:0:0:1 - - [29/Oct/2013:20:16:41 -0200] "GET /opendata/lib/bootstrap/css/bootstrap.css HTTP/1.1" 304 - http-bio-8080-exec-7 62

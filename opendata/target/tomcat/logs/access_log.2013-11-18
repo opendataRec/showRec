@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:29 -0200] "GET /opendata/faces/opendata/util/home.xhtml HTTP/1.1" 200 10961 http-bio-8080-exec-1 832
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:29 -0200] "GET /opendata/opendata/icon/bigu.jpg;jsessionid=B30CB7BB68DC157A5AA6DCA90C00AC4D HTTP/1.1" 404 1101 http-bio-8080-exec-5 1
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:29 -0200] "GET /opendata/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 304 - http-bio-8080-exec-2 71
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:29 -0200] "GET /opendata/faces/javax.faces.resource/gmap/gmap.js;jsessionid=B30CB7BB68DC157A5AA6DCA90C00AC4D?ln=primefaces&v=4.0 HTTP/1.1" 200 4718 http-bio-8080-exec-4 71
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:29 -0200] "GET /opendata/faces/javax.faces.resource/jquery/jquery.js;jsessionid=B30CB7BB68DC157A5AA6DCA90C00AC4D?ln=primefaces&v=4.0 HTTP/1.1" 200 105493 http-bio-8080-exec-7 75
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:29 -0200] "GET /opendata/icon/recife.jpg;jsessionid=B30CB7BB68DC157A5AA6DCA90C00AC4D HTTP/1.1" 200 49577 http-bio-8080-exec-8 44
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:29 -0200] "GET /opendata/faces/javax.faces.resource/primefaces.js;jsessionid=B30CB7BB68DC157A5AA6DCA90C00AC4D?ln=primefaces&v=4.0 HTTP/1.1" 200 277201 http-bio-8080-exec-3 134
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:30 -0200] "GET /opendata/opendata/icon/bigu.jpg;jsessionid=B30CB7BB68DC157A5AA6DCA90C00AC4D HTTP/1.1" 404 1101 http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [18/Nov/2013:19:06:30 -0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0

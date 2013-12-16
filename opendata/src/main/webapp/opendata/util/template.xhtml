@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+       xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+ <script src="/opendata/lib/bootstrap/js/jquery.js"></script> 
+ <link href ="/opendata/lib/bootstrap/css/bootstrap.css" rel ="stylesheet"></link>
+ <script src="/opendata/lib/bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true" />
+<title>Home</title>
+<script type="text/javascript">
+ function chamabairro(){
+	 window.location = "/opendata/faces/opendata/util/meubairro.xhtml";
+	 }
+
+</script>
+</h:head>
+<h:body>
+<nav class="navbar navbar-inverse" role="navigation" style="color: 'blue';">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">BIGU <h:graphicImage url="/icon/bigu.jpg" width="30px" height="30px" /> </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      
+      <li><a href="/opendata/faces/opendata/util/meubairro.xhtml" onclick="chamabairro()">
+         Meu Bairro
+           </a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorias <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <h:form>
+       
+          <li><h:commandLink value="Feiras Livres" action="#{managerCategorias.markerOnMap('Feiras')}" /></li>
+         
+          <li class="divider"></li>
+         
+          <li><h:commandLink value="Hoteis" action="#{managerCategorias.markerOnMap('Hoteis')}" /></li>
+         
+          <li class="divider"></li>
+         
+          <li><h:commandLink value="Mercados Públicos" action="#{managerCategorias.markerOnMap('Mercados')}" /></li>
+         
+          <li class="divider"></li>
+         
+          <li><h:commandLink value="Museus" action="#{managerCategorias.markerOnMap('Museus')}" /></li>
+         
+          <li class="divider"></li>
+         
+          <li><h:commandLink value="Pontes do Recife" action="#{managerCategorias.markerOnMap('Pontes')}" /></li>
+         
+          <li><h:commandLink value="Shopping" action="#{managerCategorias.markerOnMap('Shopping')}" /></li>
+         
+          <li class="divider"></li>
+         
+          <li><h:commandLink value="Teatro" action="#{managerCategorias.markerOnMap('Teatros')}" /></li>
+         
+          <li class="divider"></li>
+          </h:form>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Procure"/>
+      </div>
+      <button type="submit" class="btn btn-default">Procure</button>
+    </form>
+    <ui:fragment rendered="#{managerCategorias.showCount}">
+    <form class="navbar-form navbar-right" role="search">
+      <div class="form-group">
+      <span class="label label-success">Resultados Encontrados <span class="badge">#{managerCategorias.countTela}</span></span>
+        </div>
+     </form>
+    </ui:fragment>
+    
+  </div><!-- /.navbar-collapse -->
+</nav>
+ <ui:insert name="content"/>
+  
+<center>
+<span class="label label-default">Desenvolvido por <a href="">Luan Oliveira</a> e <a> José Carlos</a></span>
+ </center>
+</h:body>
+</html>

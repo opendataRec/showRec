@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-schema="opendata" match-name=".*"/>
+  <table-filter match-catalog="opendata" match-name="agr_agremiacoescarn"/>
+  <table-filter match-catalog="opendata" match-name="bar_baresrecife"/>
+  <table-filter match-catalog="opendata" match-name="calcadas"/>
+  <table-filter match-catalog="opendata" match-name="ctmgranderecife_linhaparadatrajeto_dado"/>
+  <table-filter match-catalog="opendata" match-name="ctmgranderecife_ruasparadasonibus_dado"/>
+  <table-filter match-catalog="opendata" match-name="ctmgranderecife_tarifalinhaempresa_dado"/>
+  <table-filter match-catalog="opendata" match-name="fei_feiraslivres"/>
+  <table-filter match-catalog="opendata" match-name="hoteis"/>
+  <table-filter match-catalog="opendata" match-name="mer_mercadospublicos"/>
+  <table-filter match-catalog="opendata" match-name="mus_museus"/>
+  <table-filter match-catalog="opendata" match-name="pon_pontes"/>
+  <table-filter match-catalog="opendata" match-name="sho_shopping"/>
+  <table-filter match-catalog="opendata" match-name="tea_teatros"/>
+</hibernate-reverse-engineering>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Lugares</title>
+        <f:metadata>
+			<f:viewParam name="categoria" value="#{managerPlace.categoria}"></f:viewParam>
+			<f:viewParam name="nome" value="#{managerPlace.nome}"></f:viewParam>
+		</f:metadata>
+</h:head>
+<h:body>
+ 
+      <ui:composition template="/opendata/util/template.xhtml">
+        <ui:define name="content">
+           <h:form>
+           #{managerPlace.inicializa()}
+           #{managerPlace.selectLinhaParada(managerPlace.dados.getId().getBairro())}
+           #{managerPlace.getCarnaval(managerPlace.dados.getId().getBairro())}
+           #{managerPlace.gerBares(managerPlace.dados.getId().getBairro())}
+             <div class="panel panel-primary">
+                   <div class="panel-heading">
+                     <h3 class="panel-title">#{managerPlace.categoria}</h3>
+                   </div>
+                   <div class="panel-body">
+                   <h:graphicImage value="/icon/#{managerPlace.categoria}.png" class="img-thumbnail" />
+                  <h3> <span class="label label-primary">#{managerPlace.dados.getId().getNome()}</span></h3>
+                    <p>
+                    &nbsp; &nbsp; &nbsp; &nbsp;<h4>#{managerPlace.dados.getId().getDescricao()}</h4>
+                    
+                    </p>
+                       
+                   </div>
+             </div>
+           </h:form>
+           <h:form id="form2">
+ <div class="panel-group" id="accordion">           
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        <span class="glyphicon glyphicon-plus-sign"></span>  Informações Sobre Linhas de Ônibus
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h:dataTable class="table table-striped" var="b" value="#{managerPlace.infoBus}">
+                         <h:column>
+                           <f:facet name="header">Linha</f:facet>
+                             #{b.trajeto.id.latitude}
+                           
+                           </h:column>
+                           <h:column>
+                            <f:facet name="header">Ordem do Sentido</f:facet>
+                              #{b.trajeto.id.ordemTpr}
+                           
+                            </h:column>
+                            
+                            <h:column>
+                             <f:facet name="header">Empresa</f:facet>
+                              #{b.tarifa.id.nomeEmpresa}
+                            
+                            </h:column>
+                            
+                             <h:column>
+                             <f:facet name="header">Sigla</f:facet>
+                              #{b.tarifa.id.sigla}
+                            
+                            </h:column>
+                             <h:column>
+                             <f:facet name="header">Valor</f:facet>
+                              #{b.tarifa.id.valor}
+                            
+                            </h:column>
+                       
+                       </h:dataTable>
+                 </div>
+               </div>
+            </div>
+            
+              
+          <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree1">
+         <span class="glyphicon glyphicon-plus-sign"></span>  Agremiações Carnavalescas Próximas
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree1" class="panel-collapse collapse">
+      <div class="panel-body">
+      <h:dataTable class="table table-striped" var="a" value="#{managerPlace.agremiacoes}">
+                            <h:column>
+                              <f:facet name="header">Nome</f:facet>
+                               #{a.nome}
+                           
+                           </h:column>
+                           
+                           <h:column>
+                              <f:facet name="header">Modalidade</f:facet>
+                               #{a.modalidade}
+                           
+                           </h:column>
+                           
+                           <h:column>
+                              <f:facet name="header">Fundação</f:facet>
+                               #{a.dataFundacao}
+                           
+                           </h:column>
+                           
+                           <h:column>
+                              <f:facet name="header">Bairro</f:facet>
+                               #{a.bairro}
+                           
+                           </h:column>
+      
+      
+      
+      
+      </h:dataTable>
+      </div>
+    </div>
+  </div>
+  
+      
+       <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree2">
+         <span class="glyphicon glyphicon-plus-sign"></span>  Bares e Restaurantes Próximos
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree2" class="panel-collapse collapse">
+      <div class="panel-body">
+      <h:dataTable class="table table-striped" var="b" value="#{managerPlace.bares}">
+                            <h:column>
+                              <f:facet name="header">Nome</f:facet>
+                               #{b.id.nome}
+                           
+                           </h:column>
+                           
+                           <h:column>
+                              <f:facet name="header">Especialidade</f:facet>
+                               #{b.id.especialidade}
+                           
+                           </h:column>
+                           
+                           <h:column>
+                              <f:facet name="header">Telefone</f:facet>
+                               #{b.id.telefone}
+                           
+                           </h:column>
+                           
+                           <h:column>
+                              <f:facet name="header">Site</f:facet>
+                               #{b.id.site}
+                           
+                           </h:column>
+      
+      
+      
+      
+      </h:dataTable>
+      </div>
+    </div>
+  </div>
+  </div>
+
+ 
+
+                  
+                
+           
+           
+           </h:form>
+           <div id="fb-root"></div>
+          
+<script>
+//<![CDATA[ 
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=442550225849385";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+//]]>
+  </script>
+
+       <div class="fb-comments" data-href="http://opendata.com/comments" data-width="300" data-numposts="5" data-colorscheme="light"></div>
+        </ui:define>
+      </ui:composition>
+
+</h:body>
+</html>

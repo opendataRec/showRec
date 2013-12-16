@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:51:55 -0200] "GET /opendata/faces/opendata/util/maps.xhtml HTTP/1.1" 500 2346 http-bio-8080-exec-1 795
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:51:55 -0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:52:06 -0200] "GET /opendata/faces/opendata/util/home.xhtml HTTP/1.1" 200 5140 http-bio-8080-exec-6 324
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:52:06 -0200] "GET /opendata/faces/javax.faces.resource/jquery/jquery.js;jsessionid=AD679EE07A64C15EC100715537FC431F?ln=primefaces&v=4.0 HTTP/1.1" 200 105493 http-bio-8080-exec-7 112
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:52:06 -0200] "GET /opendata/faces/javax.faces.resource/gmap/gmap.js;jsessionid=AD679EE07A64C15EC100715537FC431F?ln=primefaces&v=4.0 HTTP/1.1" 200 4718 http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:52:06 -0200] "GET /opendata/faces/javax.faces.resource/primefaces.js;jsessionid=AD679EE07A64C15EC100715537FC431F?ln=primefaces&v=4.0 HTTP/1.1" 200 277201 http-bio-8080-exec-5 12
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:54:56 -0200] "GET /opendata/faces/opendata/util/home.xhtml HTTP/1.1" 200 5741 http-bio-8080-exec-1 484
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:54:56 -0200] "GET /opendata/faces/javax.faces.resource/jquery/jquery.js?ln=primefaces&v=4.0 HTTP/1.1" 304 - http-bio-8080-exec-6 120
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:54:56 -0200] "GET /opendata/faces/javax.faces.resource/primefaces.js?ln=primefaces&v=4.0 HTTP/1.1" 304 - http-bio-8080-exec-3 120
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:54:56 -0200] "GET /opendata/faces/javax.faces.resource/gmap/gmap.js?ln=primefaces&v=4.0 HTTP/1.1" 304 - http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [12/Nov/2013:23:54:56 -0200] "GET /opendata/faces/javax.faces.resource/jsf.js?ln=javax.faces HTTP/1.1" 200 40230 http-bio-8080-exec-2 23

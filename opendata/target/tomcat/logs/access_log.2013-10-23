@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:11:57:32 -0200] "GET /opendata/faces/opendata/loadcsv.xhtml HTTP/1.1" 500 2340 http-bio-8080-exec-1 357
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:11:57:32 -0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:11:57:47 -0200] "GET /opendata/faces/opendata/util/loadcsv.xhtml HTTP/1.1" 200 791 http-bio-8080-exec-7 216
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:11:57:47 -0200] "GET /opendata/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 119894 http-bio-8080-exec-7 5
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:11:59:47 -0200] "GET /opendata/faces/opendata/util/loadcsv.xhtml HTTP/1.1" 200 747 http-bio-8080-exec-1 393
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:12:00:03 -0200] "GET /opendata/faces/opendata/util/loadcsv.xhtml HTTP/1.1" 200 748 http-bio-8080-exec-6 6
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:12:00:15 -0200] "GET /opendata/faces/opendata/util/loadcsv.xhtml HTTP/1.1" 200 747 http-bio-8080-exec-10 6
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:12:08:01 -0200] "GET /opendata/faces/opendata/util/loadcsv.xhtml HTTP/1.1" 200 748 http-bio-8080-exec-1 422
+0:0:0:0:0:0:0:1 - - [23/Oct/2013:12:10:52 -0200] "GET /opendata/faces/opendata/util/loadcsv.xhtml HTTP/1.1" 200 747 http-bio-8080-exec-1 412

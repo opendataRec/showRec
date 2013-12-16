@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [13/Nov/2013:00:12:40 -0200] "GET /opendata/faces/opendata/util/home.xhtml HTTP/1.1" 200 5682 http-bio-8080-exec-1 506
+0:0:0:0:0:0:0:1 - - [13/Nov/2013:00:12:40 -0200] "GET /opendata/lib/bootstrap/js/bootstrap.js HTTP/1.1" 304 - http-bio-8080-exec-5 17
+0:0:0:0:0:0:0:1 - - [13/Nov/2013:00:12:40 -0200] "GET /opendata/lib/bootstrap/js/jquery.js HTTP/1.1" 304 - http-bio-8080-exec-4 30
+0:0:0:0:0:0:0:1 - - [13/Nov/2013:00:12:41 -0200] "GET /opendata/faces/javax.faces.resource/jsf.js?ln=javax.faces HTTP/1.1" 304 - http-bio-8080-exec-7 124
+0:0:0:0:0:0:0:1 - - [13/Nov/2013:00:12:41 -0200] "GET /opendata/faces/javax.faces.resource/gmap/gmap.js?ln=primefaces&v=4.0 HTTP/1.1" 304 - http-bio-8080-exec-3 131
+0:0:0:0:0:0:0:1 - - [13/Nov/2013:00:12:41 -0200] "GET /opendata/faces/javax.faces.resource/primefaces.js?ln=primefaces&v=4.0 HTTP/1.1" 304 - http-bio-8080-exec-2 131
+0:0:0:0:0:0:0:1 - - [13/Nov/2013:00:12:41 -0200] "GET /opendata/faces/javax.faces.resource/jquery/jquery.js?ln=primefaces&v=4.0 HTTP/1.1" 304 - http-bio-8080-exec-6 132
+0:0:0:0:0:0:0:1 - - [13/Nov/2013:00:12:48 -0200] "POST /opendata/faces/opendata/util/home.xhtml HTTP/1.1" 200 8036 http-bio-8080-exec-5 381
